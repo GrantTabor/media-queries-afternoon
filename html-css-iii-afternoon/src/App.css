@@ -1,0 +1,94 @@
+.App{
+  background-image: url("https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+  background-position: center center;
+}
+
+.App-header{
+  background-color: transparent;
+  height: 50px;
+  color: gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.logo{
+  margin-left: 50px;
+  font-size: 30px;
+}
+.desktop-view{
+  margin-right: 50px;
+}
+.desktop-view span{
+  padding: 10px
+}
+.main{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main div{
+  text-align: center;
+  display: inline-block;
+  color: white;
+}
+.main div button{
+  background-color: gold;
+  color: white;
+  border-radius: 5px;
+  height: 60px;
+  width: 170px;
+}
+h3{
+  font-size: 40px;
+}
+h2{
+  font-size: 60px;
+}
+
+
+.drop-down-button{
+  display: none;
+}
+.mobile-nav{
+  display: none;
+}
+@media(max-width: 768px){
+  .desktop-view{
+    display: none;
+  }
+  .App-header{
+    background-color: black;
+  }
+ 
+  .drop-down-button{
+    display: initial;
+    color: white;
+    background-color: gold;
+    margin-right: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 30px;
+  }
+  .mobile-nav{
+    display: initial;
+    color: white;
+    height: 200px;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    top: 50px;
+    right: 0px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+  .mobile-nav span{
+    margin-left: 50px;
+  }
+  
+  
+}
